@@ -6,6 +6,117 @@
     <title>whackkkk</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Google Fonts - JetBrains Mono */
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap');
+
+        body {
+            font-family: 'JetBrains Mono', monospace;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url('https://emojipedia-us.s3.amazonaws.com/source/noto-emoji-animations/344/party-popper_1f389.gif'), url('https://emojipedia-us.s3.amazonaws.com/source/noto-emoji-animations/344/fire_1f525.gif');
+            background-repeat: repeat;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            padding: 40px;
+            background: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        header {
+            margin-bottom: 40px;
+            background-image: url('https://emojipedia-us.s3.amazonaws.com/source/noto-emoji-animations/344/sparkles_2728.gif');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        header h1 {
+            font-size: 2.8em;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: #666;
+            font-weight: 300;
+        }
+
+        .experience, .projects {
+            margin-bottom: 30px;
+        }
+
+        .experience h2, .projects h2 {
+            font-size: 1.8em;
+            font-weight: 500;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 5px;
+            background: url('https://emojipedia-us.s3.amazonaws.com/source/noto-emoji-animations/344/thumbs-up_1f44d.gif') no-repeat;
+            background-size: 40px;
+            background-position: right;
+        }
+
+        .experience ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .experience li {
+            background: #f9f9f9;
+            margin: 8px auto;
+            padding: 12px;
+            border-left: 4px solid #007BFF;
+            border-radius: 4px;
+            font-size: 1em;
+            font-weight: 400;
+            color: #444;
+            max-width: 80%;
+            position: relative;
+        }
+
+        .experience li:before {
+            content: "\1F680"; /* Rocket Emoji */
+            position: absolute;
+            left: -30px;
+            font-size: 1.5em;
+        }
+
+        .notes {
+            margin-top: 30px;
+        }
+
+        .links a {
+            display: inline-block;
+            margin-right: 15px;
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: 500;
+            font-size: 1.1em;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        .emoji-line {
+            font-size: 2em;
+            margin: 10px 0;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -19,12 +130,14 @@
             <h2>Experience</h2>
             <ul>
                 <li>DevOps Intern @ Cloudlaya</li>
+                <p class="emoji-line">✨🚀🎉</p>
             </ul>
         </section>
 
         <section class="projects">
             <h2>Projects</h2>
             <p>Coming soon...</p>
+            <p class="emoji-line">📚🤖💻</p>
         </section>
 
         <section class="notes">
@@ -32,100 +145,8 @@
                 <a href="https://github.com" target="_blank">GitHub</a>
                 <a href="https://twitter.com" target="_blank">Twitter</a>
             </div>
+            <p class="emoji-line">🔗✨🌟</p>
         </section>
     </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
-
-<style>
-/* Google Fonts - JetBrains Mono */
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap');
-
-body {
-    font-family: 'JetBrains Mono', monospace;
-    background-color: #f4f4f9;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-
-.container {
-    max-width: 800px;
-    width: 100%;
-    padding: 40px;
-    background: #fff;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    border-radius: 12px;
-    text-align: center;
-}
-
-header {
-    margin-bottom: 40px;
-}
-
-header h1 {
-    font-size: 2.8em;
-    font-weight: 600;
-    margin-bottom: 15px;
-    color: #2c3e50;
-}
-
-header p {
-    font-size: 1.2em;
-    color: #666;
-    font-weight: 300;
-}
-
-.experience, .projects {
-    margin-bottom: 30px;
-}
-
-.experience h2, .projects h2 {
-    font-size: 1.8em;
-    font-weight: 500;
-    margin-bottom: 15px;
-    color: #2c3e50;
-    border-bottom: 2px solid #007BFF;
-    padding-bottom: 5px;
-}
-
-.experience ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.experience li {
-    background: #f9f9f9;
-    margin: 8px auto;
-    padding: 12px;
-    border-left: 4px solid #007BFF;
-    border-radius: 4px;
-    font-size: 1em;
-    font-weight: 400;
-    color: #444;
-    max-width: 80%;
-}
-
-.notes {
-    margin-top: 30px;
-}
-
-.links a {
-    display: inline-block;
-    margin-right: 15px;
-    text-decoration: none;
-    color: #007BFF;
-    font-weight: 500;
-    font-size: 1.1em;
-}
-
-.links a:hover {
-    text-decoration: underline;
-}
-</style>
